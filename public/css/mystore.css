@@ -1,0 +1,118 @@
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.btn,
+.option-btn,
+.delete-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    color:var(--white);
+    font-size: 1.7rem;
+    padding:1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+    background-color: var(--black);
+}
+.message{
+	display: block;
+	background: var(--bg-color);
+	padding: 1.5rem 1rem;
+	font-size: 2rem;
+	color:var(--black);
+	margin-bottom: 2rem;
+	text-align: center;
+}
+.product-display{
+	margin: 2rem 0;
+	overflow-y: scroll;
+}
+.product-display .product-display-table{
+	width:100%
+}
+.product-display .product-display-table thead{
+	padding:1rem;
+	font-size:2rem;
+	background: #eee;
+}
+.product-display .product-display-table th{
+	padding:1rem;
+	font-size:2rem;
+}
+.product-display .product-display-table td{
+	padding:1rem;
+	font-size:2rem;
+	border-bottom: var(--border);
+}
+.product-display .product-display-table .btn:last-child{
+	background: crimson;
+}
+.option-btn i,
+.delete-btn i{
+    padding-right: .5rem;
+}
+.option-btn{
+    background-color: var(--orange);
+}
+.delete-btn{
+    margin-top: 0;
+    background-color: var(--red);
+}
+#menu-btn{
+    margin-left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color:var(--white);
+    display: none;
+}
+.add-product-form{
+    max-width: 50rem;
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    padding:2rem;
+    margin:0 auto;
+    margin-top: 2rem;
+}
+.add-product-form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color:var(--black);
+    text-transform: uppercase;
+    text-align: center;
+}
+.add-product-form .box{
+    text-transform: none;
+    padding:1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: .5rem;
+    background-color: var(--white);
+    margin:1rem 0;
+    width: 100%;
+}
